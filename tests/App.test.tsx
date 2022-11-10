@@ -6,7 +6,7 @@ import App from '../App';
 describe('App test suite', () => {
   it('should renders correctly', () => {
     // Act
-    const tree = renderer.create(<App />).toJSON() as any;
+    const tree = renderer.create(<App />).toJSON();
 
     // Assert
     expect(tree).toMatchSnapshot();
